@@ -1,0 +1,144 @@
+<!-- 주석(Ctrl + /슬래시) : 브라우저에서 출력이 되지 않는 설명 문장
+ 보통 코드에 대한 부연설명을 할 때 사용.
+ 영역 안에 있으면 전부 주석으로 간주합니다.
+-->
+
+<!-- 
+    HTML 뼈대 자동완성 : 느낌표 + Enter
+-->
+
+<!DOCTYPE html>  <!-- HTML5 문서임을 선언하는 코드. 대소문자 구분없이 정의해도 됨 -->
+<html lang="en"> <!-- HTML에서 최상위 태그(root 태그), 루트 요소 -->
+<head> <!-- 현재 HTML 웹 페이지의 정보를 포함한다.(메타데이터) -->
+    <meta charset="UTF-8"> <!-- 글자에 대한 인코딩-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index.html</title> <!-- HTML 페이지의 제목, 브라우저 상단의 
+                                                웹페이지 탭에 제목이 노출됨-->
+    
+
+    <!-- 외부 css 파일과 연동--> 
+    <!-- relationship : 연결하려는 파일과의 관계 -->
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+    <body> <!-- HTML 문서에서 실질적으로 보이는 영역을 정의하는 구간
+                    이미지, 글, 링크, 테이블, 동영상 등등 -->
+
+            <!-- 코드 작성 시 엔터를 눌러 줄바꿈을 시도했음에도 불구하고
+                    실행 화면에는 한 줄로 연결된 채 나온다 -->
+
+        <div id="top">
+            <img src="image/instagramlogo.png" width="150px">
+            <input value="검색">
+            <div>
+                <i class="fa-solid fa-house"></i>
+                <i class="fa-solid fa-paper-plane"></i>
+                <i class="fa-solid fa-compass"></i>
+                <i class="fa-solid fa-heart"></i>
+            </div>
+        </div>
+
+        <div id="profile">
+            <div id="profile_pic">
+                <img src="image/cute cat.jpg" class="circle_pic"> 
+            </div>
+
+            <div id="profile_info">
+                <div id="id">half_bottle <i class="fa-solid fa-gear"></i></div>
+                <button>프로필 편집</button>
+            </div>
+        </div>
+        <div>
+            <P>
+                <strong>
+                    반병현(Bynghyun Ban)
+                </strong> <br>
+                작가<br>
+            </P>
+            <P>
+                <a href="needleworm.github.io">needleworm.github.io</a>
+            </P>
+        </div>
+
+        <div id="highlight_area">
+            <div class="highlight">
+                <div class="highlight_pic">
+                    <img src="image/hl 1.jpg" class="circle_pic">
+                </div>
+                <div>
+                    👩
+                </div>
+            </div>
+            <div class="highlight">
+                <div class="highlight_pic">
+                    <img src="image/hl 2.jpg" class="circle_pic">
+                </div>
+                <div>
+                    👨
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <div id="stat_bar">
+            <div class="stat">
+                게시물<br>
+                133
+            </div>
+            <div class="stat">
+                팔로워<br>
+                408
+            </div>
+            <div class="stat">
+                팔로우<br>
+                189
+            </div>
+        </div>
+
+        <!-- 아이콘이 들어갈 자리 -->
+        <div id="sub_icons">
+            <div class="selected">
+                <i class="fa-solid fa-border-all"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-film"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-circle-play"></i>
+            </div> 
+            <div>
+                <i class="fa-solid fa-bookmark"></i>
+            </div>
+            <div> 
+                <i class="fa-solid fa-user-tag"></i>
+            </div>
+        </div>
+
+        <div>
+            <div class="thumbnail_grid">
+                <!-- 
+                    창 크기의 변화에 맞춰 그때그때 화면의 정보나 크기가 함께
+                    바뀌는 웹 페이지를 '반응형 웹'이라고 한다.
+                -->
+                <img src="image/1.jpg" class="thumbnail">
+                <img src="image/2.jpg" class="thumbnail">
+                <img src="image/3.jpg" class="thumbnail">
+            </div>
+            <div class="thumbnail_grid" >
+                <img src="image/4.jpg" class="thumbnail">
+                <img src="image/5.jpg" class="thumbnail">
+                <img src="image/6.jpg" class="thumbnail">
+            </div>
+            <div class="thumbnail_grid">
+                <img src="image/7.jpg" class="thumbnail">
+                <img src="image/8.jpg" class="thumbnail">
+                <img src="image/9.jpg" class="thumbnail">
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
